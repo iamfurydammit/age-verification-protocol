@@ -90,7 +90,7 @@ Continued access is governed solely by local session continuity and presence con
 
 No age checks, presence checks, timers, or prompts occur prior to an explicit request for age-restricted content.
 
-### What AVP Is Not
+## What AVP Is Not
 
 AVP explicitly does not attempt to solve:
 
@@ -114,7 +114,7 @@ Analytics or telemetry
 
 Any system that introduces these properties is out of scope by design.
 
-High-Level Architecture
+## High-Level Architecture
 One-Time Age Verification (Issuance)
 
 The user submits government-issued ID and completes a one-time proof-of-life scan.
@@ -131,7 +131,7 @@ A non-transferable Adult Proof Token (APT) is issued to the user.
 
 This is the only moment at which personal data is processed.
 
-Local Credential Control
+## Local Credential Control
 
 The Adult Proof Token is delivered to the user and stored locally.
 
@@ -165,7 +165,7 @@ Offline-capable
 Users never see denied content.
 No records of access are created.
 
-Token Characteristics
+## Token Characteristics
 
 Non-transferable
 
@@ -183,7 +183,7 @@ Not enumerable
 
 It is cryptographically impossible to count, estimate, or infer the number of issued tokens, active sessions, or participating users.
 
-Age-Domain Isolation (Mandatory)
+## Age-Domain Isolation (Mandatory)
 
 Adult Proof Tokens and child-domain credentials exist in mutually exclusive interaction domains.
 
@@ -206,7 +206,7 @@ Cross-domain proofs are not merely rejected — they are structurally invalid an
 
 This separation is enforced by protocol design, not moderation or policy.
 
-Explicit Non-Goals
+## Explicit Non-Goals
 
 AVP explicitly does not:
 
@@ -238,7 +238,7 @@ No issuer visibility into usage
 
 These properties are enforced by architecture, not by policy.
 
-Constitutional Considerations
+## Constitutional Considerations
 
 AVP is designed to:
 
@@ -254,7 +254,7 @@ Avoid logging or monitoring of viewing behavior
 
 Age checks occur only at the point of requesting age-restricted content and reveal no identity information.
 
-Repository Structure
+## Repository Structure
 
 This repository contains:
 
@@ -268,13 +268,13 @@ A Rust reference implementation demonstrating protocol invariants
 
 The protocol itself is implementation-independent.
 
-Status
+## Status
 
 This project is currently in the specification and reference implementation phase.
 
 Protocol invariants are considered foundational and must not be altered without a major version change.
 
-License
+## License
 
 This repository is published for public review, discussion, and implementation.
 
