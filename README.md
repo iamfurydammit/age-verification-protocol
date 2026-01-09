@@ -1,4 +1,4 @@
-# **Age Verification Protocol (AVP)**
+**Age Verification Protocol (AVP)**
 
 ## Overview
 
