@@ -1,5 +1,5 @@
 ### Age Verification Protocol (AVP)
-###Overview
+### Overview
 
 The Age Verification Protocol (AVP) is a privacy-preserving, decentralized protocol that enables access to age-restricted content by answering exactly one question:
 
@@ -8,26 +8,26 @@ Is the user an adult?
 AVP is designed to protect minors without identifying users, without tracking behavior, and without creating records of access, in a manner consistent with the Constitution of the United States.
 
 The protocol does not provide identity, reputation, accounts, profiles, or surveillance. It exists solely to prove non-minor status.
-###
-## Design Goals
+
+### Design Goals
 
 AVP is built around the following non-negotiable goals:
 
-Single-question scope
+## Single-question scope
 
 The protocol answers only: “Is the holder an adult?”
 No other attributes are exposed or inferable.
 
-One-time verification
+## One-time verification
 
 Age is verified once using government-issued identification and a one-time proof-of-life (liveness) check.
 No recurring verification is required.
 
-No identity disclosure
+## No identity disclosure
 
 No names, addresses, document numbers, or identifiers are revealed to content sites or verifiers.
 
-No tracking or observation
+## No tracking or observation
 
 It is cryptographically impossible to determine:
 
@@ -39,15 +39,15 @@ where it has been used
 
 when it has been used
 
-No central database
+## No central database
 
 Sensitive verification material is decentralized and cryptographically fragmented across independent hubs.
 
-Stateless verification
+## Stateless verification
 
 Proof verification produces no side effects, logs, counters, callbacks, or observable signals.
 
-Time-Based Eligibility Resolution
+### Time-Based Eligibility Resolution
 
 Adult eligibility is resolved through a time-based cryptographic commitment created at issuance.
 
@@ -57,11 +57,11 @@ Eligibility emerges solely from the passage of time and local proof generation, 
 The token is passive, non-expiring, and matures naturally with the holder.
 No authority, service, or platform participates in or observes this transition.
 
-Constitutionally Narrow
+### Constitutionally Narrow
 
 The protocol is narrowly tailored to protect minors while preserving anonymous access to lawful adult speech.
 
-Session Continuity & Token Loss
+### Session Continuity & Token Loss
 
 Age eligibility tokens are session-bound and may be invalidated at any time due to session termination, device disconnection, or loss of session continuity.
 
@@ -72,7 +72,7 @@ Users may re-authenticate at any time to obtain a new token. Re-authentication m
 AVP does not provide continuous identity verification, monitoring, or surveillance.
 Session invalidation is a safety control, not a tracking mechanism.
 
-Client Activation & Session Entry
+### Client Activation & Session Entry
 
 The AVP client remains inactive during normal device use and general web browsing.
 Age-restricted content is inaccessible by default.
@@ -90,7 +90,7 @@ Continued access is governed solely by local session continuity and presence con
 
 No age checks, presence checks, timers, or prompts occur prior to an explicit request for age-restricted content.
 
-What AVP Is Not
+### What AVP Is Not
 
 AVP explicitly does not attempt to solve:
 
