@@ -16,23 +16,23 @@ The protocol does not provide identity, reputation, accounts, profiles, or surve
 AVP is built around the following non-negotiable goals:
 
 
-### Single-question scope
+## Single-question scope
 
 The protocol answers only: “Is the holder an adult?”
 No other attributes are exposed or inferable.
 
 
-### One-time verification
+## One-time verification
 
 Age is verified once using government-issued identification and a liveness check.
 No recurring verification is required.
 
-### No identity disclosure
+## No identity disclosure
 
 No names, addresses, document numbers, or identifiers are revealed to content sites.
 
 
-### No tracking or observation
+## No tracking or observation
 
 It is cryptographically impossible to determine:
 
@@ -42,7 +42,7 @@ It is cryptographically impossible to determine:
 * when it has been used
 
 
-### No central database
+## No central database
 
 Sensitive verification material is decentralized and cryptographically fragmented across independent hubs.
 
@@ -51,7 +51,7 @@ Sensitive verification material is decentralized and cryptographically fragmente
 Proof verification produces no side effects, logs, counters, or callbacks.
 
 
-### Time-Based Eligibility Resolution
+## Time-Based Eligibility Resolution
 
 Adult eligibility is resolved through a time-based cryptographic commitment embedded at issuance.
 
@@ -59,7 +59,7 @@ The Adult Proof Token contains no date of birth, no age value, no counters, no t
 Eligibility emerges solely from the passage of time and local proof generation, without re-verification, refresh, or network interaction.
 
 
-### Constitutionally narrow
+## Constitutionally narrow
 
 The protocol is narrowly tailored to protect minors while preserving anonymous access to lawful adult speech.
 
