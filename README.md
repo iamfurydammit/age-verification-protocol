@@ -1,4 +1,4 @@
-Age Verification Protocol (AVP)
+### Age Verification Protocol (AVP)
 Overview
 
 The Age Verification Protocol (AVP) is a privacy-preserving, decentralized protocol that enables access to age-restricted content by answering exactly one question:
@@ -9,7 +9,7 @@ AVP is designed to protect minors without identifying users, without tracking be
 
 The protocol does not provide identity, reputation, accounts, profiles, or surveillance. It exists solely to prove non-minor status.
 
-Design Goals
+## Design Goals
 
 AVP is built around the following non-negotiable goals:
 
