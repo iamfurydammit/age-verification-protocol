@@ -11,15 +11,16 @@ AVP is designed to protect minors without identifying users, without tracking be
 The protocol does not provide identity, reputation, accounts, profiles, or surveillance. It exists solely to prove non-minor status.
 
 
-
 ## Design Goals
 
 AVP is built around the following non-negotiable goals:
+
 
 ### Single-question scope
 
 The protocol answers only: “Is the holder an adult?”
 No other attributes are exposed or inferable.
+
 
 ### One-time verification
 
@@ -30,6 +31,7 @@ No recurring verification is required.
 
 No names, addresses, document numbers, or identifiers are revealed to content sites.
 
+
 ### No tracking or observation
 
 It is cryptographically impossible to determine:
@@ -39,6 +41,7 @@ It is cryptographically impossible to determine:
 * where it has been used
 * when it has been used
 
+
 ### No central database
 
 Sensitive verification material is decentralized and cryptographically fragmented across independent hubs.
@@ -46,6 +49,15 @@ Sensitive verification material is decentralized and cryptographically fragmente
 ### Stateless verification
 
 Proof verification produces no side effects, logs, counters, or callbacks.
+
+
+### Time-Based Eligibility Resolution
+
+Adult eligibility is resolved through a time-based cryptographic commitment embedded at issuance.
+
+The Adult Proof Token contains no date of birth, no age value, no counters, no timestamps, and no update mechanisms.
+Eligibility emerges solely from the passage of time and local proof generation, without re-verification, refresh, or network interaction.
+
 
 ### Constitutionally narrow
 
@@ -59,6 +71,7 @@ Age eligibility tokens are session-bound and may be invalidated at any time due 
 Loss of a token does not revoke age status.
 
 Users may re-authenticate at any time to obtain a new token. Re-authentication may require out-of-band confirmation (e.g., email, SMS, or hardware confirmation).
+
 
 AVP does not provide continuous identity verification, monitoring, or surveillance.
 Session invalidation is a safety control, not a tracking mechanism.
@@ -146,6 +159,31 @@ No records of access are created.
 * A cryptographic commitment derived from DOB enables future age checks.
 * Adulthood eligibility updates automatically as a function of time.
 * No refresh, renewal, or re-verification is required.
+
+
+## Time-Based Eligibility Resolution
+
+Adult eligibility is resolved through a time-based cryptographic commitment created at issuance.
+
+The Adult Proof Token contains no date of birth, no age value, no counters, no timestamps, and no update mechanisms.
+Eligibility emerges solely from the passage of time and local proof generation, without re-verification, renewal, refresh, or network interaction.
+
+The token is passive, non-expiring, and matures naturally with the holder. No authority, service, or platform participates in or observes this transition.
+
+
+## Explicit Non-Goals
+
+AVP explicitly does not:
+
+Track age progression
+
+Issue expiring credentials
+
+Require periodic renewal or re-verification
+
+Perform background checks or scheduled updates
+
+All eligibility resolution occurs locally and deterministically, without storage, logging, or external coordination.
 
 
 ## Security and Privacy Properties
