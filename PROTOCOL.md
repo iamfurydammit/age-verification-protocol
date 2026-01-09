@@ -215,3 +215,100 @@ After issuance completes:
 - The APT MUST exist solely under user control
 
 Any system behavior after issuance is outside the Issuance Phase.
+## 5. Storage Phase
+
+The Storage Phase governs how the Adult Proof Token (APT) is retained after
+issuance.
+
+The Storage Phase is entirely local and does not involve any networked system.
+
+---
+
+### 5.1 Storage Location
+
+The Adult Proof Token MUST:
+
+- Be stored locally on a device under the user’s control
+- Never be stored in a centralized or remote system
+- Never be replicated to a shared or observable location
+
+The protocol does not mandate a specific storage mechanism.
+
+---
+
+### 5.2 Access Control
+
+Access to the Adult Proof Token MAY be gated by local device security
+mechanisms.
+
+Such mechanisms MAY include:
+
+- Device authentication
+- Local application authentication
+- Secure hardware enclaves
+
+Access controls MUST NOT:
+
+- Introduce identity
+- Introduce persistent identifiers
+- Introduce network dependencies
+
+---
+
+### 5.3 Network Isolation
+
+During the Storage Phase:
+
+- The Adult Proof Token MUST NOT be transmitted
+- The Adult Proof Token MUST NOT be synchronized
+- The Adult Proof Token MUST NOT be queried remotely
+
+No background network activity may occur as a result of token storage.
+
+---
+
+### 5.4 Enumeration Resistance
+
+Storage of the Adult Proof Token MUST NOT enable:
+
+- Counting of tokens
+- Estimation of population size
+- Discovery of other tokens
+- Correlation across devices or users
+
+There MUST be no global index, registry, or namespace associated with storage.
+
+---
+
+### 5.5 Loss and Destruction
+
+Loss or destruction of the Adult Proof Token:
+
+- Does NOT revoke age eligibility
+- Does NOT trigger any remote notification
+- Does NOT create a record or signal
+
+The protocol does not guarantee recoverability of a lost token.
+
+---
+
+### 5.6 Re-Issuance After Loss
+
+If a token is lost, the user MAY re-enter the Issuance Phase.
+
+Re-issuance:
+
+- MUST follow the same constraints as initial issuance
+- MUST NOT rely on prior issuance records
+- MUST NOT assume continuity or identity
+
+Each issuance is independent.
+
+---
+
+### 5.7 Storage Phase Boundaries
+
+The Storage Phase ends when the user explicitly initiates a session to access
+age-restricted content.
+
+No session state exists during the Storage Phase.
