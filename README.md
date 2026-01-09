@@ -16,23 +16,23 @@ The protocol does not provide identity, reputation, accounts, profiles, or surve
 AVP is built around the following non-negotiable goals:
 
 
-## Single-question scope
+### Single-question scope
 
 The protocol answers only: “Is the holder an adult?”
 No other attributes are exposed or inferable.
 
 
-## One-time verification
+### One-time verification
 
 Age is verified once using government-issued identification and a liveness check.
 No recurring verification is required.
 
-## No identity disclosure
+### No identity disclosure
 
 No names, addresses, document numbers, or identifiers are revealed to content sites.
 
 
-## No tracking or observation
+### No tracking or observation
 
 It is cryptographically impossible to determine:
 
@@ -42,7 +42,7 @@ It is cryptographically impossible to determine:
 * when it has been used
 
 
-## No central database
+### No central database
 
 Sensitive verification material is decentralized and cryptographically fragmented across independent hubs.
 
