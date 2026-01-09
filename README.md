@@ -52,6 +52,13 @@ Re-authentication may require **out-of-band confirmation** (e.g., email and SMS)
 AVP does **not** provide continuous identity verification, monitoring, or surveillance.
 Session invalidation is a **safety control**, not a tracking mechanism.
 
+### Client Activation Boundary
+
+The AVP client remains inactive during normal device use and browser operation.
+Age verification and presence confirmation are triggered **only** when a web browser attempts to access age-restricted content.
+
+No age checks, presence checks, timers, or prompts occur prior to such a request.
+
 ## What AVP Is Not
 AVP explicitly does **not** attempt to solve:
 * Digital identity
